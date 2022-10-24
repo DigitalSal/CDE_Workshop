@@ -81,7 +81,7 @@ spark.conf.set("spark.sql.legacy.allowCreatingManagedTableUsingNonemptyLocation"
 #                           Therefore, set variable as:
 #                                 s3BucketName = "s3a://usermarketing-cdp-demo"
 #-----------------------------------------------------------------------------------
-s3BucketName = "s3a://pjoshicdpoct2021/data"         # <--- Update S3 bucket location
+s3BucketName = "s3a://pse-workshop/cde-workshop"         # <--- Update S3 bucket location
 car_installs  = spark.read.csv(s3BucketName + "/car_installs.csv",        header=True, inferSchema=True)
 car_sales     = spark.read.csv(s3BucketName + "/car_sales.csv",           header=True, inferSchema=True)
 customer_data = spark.read.csv(s3BucketName + "/customer_data.csv",       header=True, inferSchema=True)
