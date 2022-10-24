@@ -17,7 +17,7 @@ spark = SparkSession \
     .getOrCreate()
 
 #Path of our file in s3
-input_path ="s3a://pjoshicdpoct2021/data"
+input_path ="s3a://pse-workshop/cde-workshop"
 
 #This is to deal with tables existing before running this code. Not needed if you're starting fresh.
 spark.conf.set("spark.sql.legacy.allowCreatingManagedTableUsingNonemptyLocation","true")
