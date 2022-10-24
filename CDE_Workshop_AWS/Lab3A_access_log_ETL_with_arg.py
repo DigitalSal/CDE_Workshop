@@ -30,7 +30,7 @@ spark = SparkSession \
     .getOrCreate()
 
 ### Update the s3 details here
-input_path ="s3a://sal-3workshop/cde-workshop"
+input_path ="s3a://pse-workshop/cde-workshop"
 
 base_df=spark.read.text(input_path + "/access-log.txt")
 
