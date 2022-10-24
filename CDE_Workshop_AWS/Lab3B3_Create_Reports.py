@@ -7,8 +7,8 @@ from pyspark.sql.functions import split, col
 import sys
 
 ### Update the username and dbname
-username = "<ENTER YOUR USERNAME HERE" ## wuser1
-db_name = "<ENTER YOUR DB NAME HERE>"    ## <username>_TexasPPP
+username = "<ENTER YOUR USERNAME HERE>" ## wuser1
+db_name = username + "_TexasPPP"    ## <username>_TexasPPP
 appName = username + "CDE-Lab3-Job4-PPyspark PPP Report"
 
 spark = SparkSession \
