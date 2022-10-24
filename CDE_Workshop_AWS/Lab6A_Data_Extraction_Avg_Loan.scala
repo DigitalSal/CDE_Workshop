@@ -12,7 +12,7 @@ val appName = user + "-AvgLoan-Texas"
 val spark = SparkSession.builder.appName(appName).getOrCreate()
 
 // Update s3 details here
-val input_path ="s3a://pjoshicdpoct2021/data"
+val input_path ="s3a://pse-workshop/cde-workshop"
 
 val base_df=spark.read.option("header","true").option("inferSchema","true").csv(input_path + "/PPP-Sub-150k-TX.csv")
 
